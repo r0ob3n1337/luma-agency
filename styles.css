@@ -45,7 +45,9 @@ h3 {
   width: 1364px;
 }
 
-/* Типографика */
+/* ========================================================== */
+/* typo */
+/* ========================================================== */
 
 .title-xl {
   font-size: 56px;
@@ -100,7 +102,9 @@ h3 {
   text-decoration: underline;
 }
 
-/* Общие элементы */
+/* ========================================================== */
+/* components */
+/* ========================================================== */
 
 .logo {
   font-size: 42px;
@@ -150,7 +154,9 @@ h3 {
   align-items: center;
 }
 
-/* Header */
+/* ========================================================== */
+/* header */
+/* ========================================================== */
 
 .header__inner {
   height: 100px;
@@ -170,7 +176,9 @@ h3 {
   text-underline-offset: 4px;
 }
 
-/* Footer */
+/* ========================================================== */
+/* footer */
+/* ========================================================== */
 
 .footer {
   padding: 25px 0;
@@ -181,7 +189,9 @@ h3 {
   gap: 40px;
 }
 
-/* Секции */
+/* ========================================================== */
+/* sections */
+/* ========================================================== */
 
 .section {
   padding: 40px 0;
@@ -218,7 +228,9 @@ h3 {
   color: var(--color-white);
 }
 
-/* Раскладки */
+/* ========================================================== */
+/* grids */
+/* ========================================================== */
 
 .stack {
   display: flex;
@@ -268,7 +280,9 @@ h3 {
   align-items: center;
 }
 
-/* Карточки */
+/* ========================================================== */
+/* cards */
+/* ========================================================== */
 
 .card__image {
   width: 100%;
@@ -305,7 +319,9 @@ h3 {
   justify-content: space-between;
 }
 
-/* Нумерованные пункты */
+/* ========================================================== */
+/* steps */
+/* ========================================================== */
 
 .features {
   display: grid;
@@ -360,7 +376,9 @@ h3 {
   background-color: var(--color-white);
 }
 
-/* Контакты */
+/* ========================================================== */
+/* concat us */
+/* ========================================================== */
 
 .contacts-layout {
   display: grid;
@@ -386,7 +404,9 @@ h3 {
   width: 210px;
 }
 
-/* Форма */
+/* ========================================================== */
+/* contact us form */
+/* ========================================================== */
 
 .form {
   display: flex;
@@ -454,7 +474,9 @@ h3 {
   accent-color: var(--color-primary);
 }
 
-/* Попап */
+/* ========================================================== */
+/* success popup */
+/* ========================================================== */
 
 .popup {
   width: 560px;
@@ -491,4 +513,285 @@ h3 {
   border: none;
   background: none;
   cursor: pointer;
+}
+
+/* ========================================================== */
+/* mob */
+/* ========================================================== */
+
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .container,
+  .container--wide {
+    width: auto;
+    padding: 0 16px;
+  }
+
+  .title-xl {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .title-l {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .title-m {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .title-s {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .lead {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .text {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .label {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .label + :is(h1, h2) {
+    margin-top: 12px;
+  }
+
+  :is(h1, h2, .text, .lead, .project-meta) + p:is(.text, .lead) {
+    margin-top: 16px;
+  }
+
+  :is(h2, .text, .lead) + .button {
+    margin-top: 32px;
+  }
+
+  p:not(.card__meta) br,
+  h3 br,
+  .title-m br,
+  .title-s br {
+    display: none;
+  }
+
+  .logo {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .header__inner {
+    flex-wrap: wrap;
+    row-gap: 16px;
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .header__right {
+    display: contents;
+  }
+
+  .header .nav {
+    order: 1;
+    width: 100%;
+  }
+
+  .header .button {
+    width: auto;
+    padding: 10px 14px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .nav__list {
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    font-size: 15px;
+  }
+
+  .footer {
+    padding: 32px 0;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer__list {
+    flex-wrap: wrap;
+    gap: 8px 24px;
+  }
+
+  .section {
+    padding: 32px 0;
+  }
+
+  .section--last {
+    padding-bottom: 56px;
+  }
+
+  .section-head {
+    align-items: baseline;
+    gap: 16px;
+  }
+
+  .section-title {
+    margin-bottom: 24px;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 560px;
+    padding: 300px 0 40px;
+  }
+
+  .contact {
+    padding: 48px 0;
+  }
+
+  .split {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .split__content,
+  .split__content--half {
+    width: auto;
+  }
+
+  .split__image,
+  .split__image--half,
+  .service__image {
+    width: 100%;
+    height: 260px;
+  }
+
+  .stack {
+    gap: 40px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .cards-grid .stack {
+    gap: 32px;
+  }
+
+  .card__image {
+    height: 260px;
+  }
+
+  .card__image--tall {
+    height: 420px;
+  }
+
+  .clients {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px 24px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .feature {
+    gap: 16px;
+  }
+
+  .feature__number {
+    width: 48px;
+  }
+
+  .steps__line {
+    display: none;
+  }
+
+  .steps__list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .step {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    column-gap: 16px;
+    align-content: start;
+  }
+
+  .step:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: 48px;
+    bottom: -24px;
+    left: 24px;
+    width: 1px;
+    background-color: var(--color-text);
+  }
+
+  .step__number {
+    grid-row: 1 / span 2;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0;
+  }
+
+  .step__title {
+    margin-bottom: 4px;
+  }
+
+  .contacts-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .contacts-list {
+    gap: 20px;
+    margin-top: 32px;
+  }
+
+  .contacts-list__row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .contacts-list__label {
+    width: auto;
+    color: var(--color-gray);
+  }
+
+  .form__row {
+    grid-template-columns: 1fr;
+  }
+
+  .checkbox {
+    align-items: flex-start;
+  }
+
+  .checkbox input {
+    flex-shrink: 0;
+  }
+
+  .popup {
+    width: calc(100% - 32px);
+    padding: 24px 20px 28px;
+  }
 }
