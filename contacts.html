@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакты — ЛЮМА</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container container--wide header__inner">
+      <a class="logo" href="index.html">ЛЮМА</a>
+      <div class="header__right">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="projects.html">Наши проекты</a></li>
+            <li><a class="nav__link" href="services.html">Услуги</a></li>
+            <li><a class="nav__link" href="about.html">О нас</a></li>
+            <li><a class="nav__link" href="contacts.html" aria-current="page">Контакты</a></li>
+          </ul>
+        </nav>
+        <a class="button" href="contacts.html">Обсудить проект <span>→</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container split">
+        <div class="split__content split__content--half">
+          <p class="label">Связь и начало проекта</p>
+          <h1 class="title-xl">Контакты</h1>
+          <p class="lead">Обсудим съемку для вашего бренда,<br>личного проекта или творческой идеи.<br>Поможем выбрать формат и организуем<br>весь процесс – от подготовки до готовых кадров.</p>
+        </div>
+        <img class="split__image split__image--half" src="images/studio.png" alt="Съемка в студии ЛЮМА">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contacts-layout">
+        <div>
+          <p class="label">Свяжитесь с нами</p>
+          <h2 class="title-l">Давайте создадим<br>что-то вместе</h2>
+          <p class="lead">Расскажите о задаче, сроках и пожеланиях.<br>Мы предложим формат съемки,<br>подберем локацию и соберем команду.</p>
+          <ul class="contacts-list">
+            <li class="contacts-list__row">
+              <span class="label contacts-list__label">Email</span>
+              <a class="contacts-list__value text" href="mailto:hello@luma-agency.com">hello@luma-agency.com</a>
+            </li>
+            <li class="contacts-list__row">
+              <span class="label contacts-list__label">Телефон</span>
+              <a class="contacts-list__value text" href="tel:+79991234455">+7 (999) 123-44-55</a>
+            </li>
+            <li class="contacts-list__row">
+              <span class="label contacts-list__label">Город</span>
+              <span class="contacts-list__value text">Санкт-Петербург</span>
+            </li>
+            <li class="contacts-list__row">
+              <span class="label contacts-list__label">Соцсети</span>
+              <span class="contacts-list__value text">
+                <a class="underline" href="#">Behance</a>
+                <a class="underline" href="#">DProfile</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form" action="#" method="post" novalidate>
+          <div>
+            <h2 class="title-l">Отправить заявку</h2>
+            <p class="lead">Поля со звездочкой обязательны для заполнения</p>
+          </div>
+          <div class="form__row">
+            <label class="field">
+              Имя*
+              <input class="field__input" type="text" name="name" placeholder="Ваше имя" required>
+            </label>
+            <label class="field">
+              Email*
+              <input class="field__input" type="email" name="email" placeholder="your@email.com" required>
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="field">
+              Телефон*
+              <input class="field__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+            </label>
+            <label class="field">
+              Тип проекта*
+              <select class="field__input field__input--select" name="type" required>
+                <option value="" selected disabled>Выберите тип съемки</option>
+                <option>Коммерческая съемка</option>
+                <option>Портретная съемка</option>
+                <option>Предметная съемка</option>
+                <option>Fashion и редакционная съемка</option>
+                <option>Продакшн</option>
+              </select>
+            </label>
+          </div>
+          <label class="field">
+            Бюджет*
+            <select class="field__input field__input--select" name="budget" required>
+              <option value="" selected disabled>Выберите диапазон</option>
+              <option>До 50 000 ₽</option>
+              <option>50 000 – 150 000 ₽</option>
+              <option>150 000 – 300 000 ₽</option>
+              <option>Более 300 000 ₽</option>
+            </select>
+          </label>
+          <label class="field">
+            Описание проекта*
+            <textarea class="field__input field__input--textarea" name="message" placeholder="Расскажите о задаче, сроках и референсах" required></textarea>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="agree" required>
+            <span>Я согласен на <a class="underline" href="#">обработку персональных данных</a>*</span>
+          </label>
+          <button class="button button--full" type="submit" disabled>Отправить <span>→</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--last">
+      <div class="container">
+        <h2 class="title-l section-title">Почему с нами удобно</h2>
+        <div class="features">
+          <div class="feature">
+            <p class="feature__number title-m">01</p>
+            <div>
+              <h3 class="feature__title lead">Ответим в течение<br>рабочего дня</h3>
+              <p>Изучим заявку и свяжемся с вами,<br>чтобы обсудить детали съемки.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <p class="feature__number title-m">02</p>
+            <div>
+              <h3 class="feature__title lead">Поможем<br>уточнить задачу</h3>
+              <p>Готовое ТЗ не обязательно.<br>Поможем сформулировать идею<br>и выбрать подходящий формат.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <p class="feature__number title-m">03</p>
+            <div>
+              <h3 class="feature__title lead">Работаем с брендами<br>и частными клиентами</h3>
+              <p>Снимаем для компаний,<br>творческих команд и людей,<br>которым важна их история.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <p class="label">Давайте работать вместе</p>
+        <h2 class="title-l">Есть проект?<br>Давайте обсудим.</h2>
+        <a class="button" href="contacts.html">Начать проект <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container container--wide footer__inner">
+      <a class="logo" href="index.html">ЛЮМА</a>
+      <ul class="footer__list">
+        <li><a href="#">Behance</a></li>
+        <li><a href="#">DProfile</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li><a href="mailto:hello@luma-agency.com">hello@luma-agency.com</a></li>
+        <li><a href="tel:+79991234455">+7 (999) 123-44-55</a></li>
+        <li>Санкт-Петербург</li>
+      </ul>
+    </div>
+  </footer>
+
+  <dialog class="popup" aria-labelledby="popup-title">
+    <div class="popup__head">
+      <h2 class="popup__title title-s" id="popup-title">Заявка отправлена</h2>
+      <button class="popup__close" type="button" aria-label="Закрыть">
+        <img src="images/icon-close.svg" width="24" height="24" alt="">
+      </button>
+    </div>
+    <p>Спасибо за обращение. Мы свяжемся с вами, чтобы обсудить детали съемки.</p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

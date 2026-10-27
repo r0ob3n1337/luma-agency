@@ -1,0 +1,494 @@
+:root {
+  --color-primary: #c2ed86;
+  --color-text: #000000;
+  --color-white: #ffffff;
+  --color-gray: #828282;
+  --color-overlay: rgba(0, 0, 0, 0.35);
+  --color-border: #888888;
+  --color-primary-muted: #e3f5c9;
+  --color-dark: #212121;
+  --color-error: #d92d20;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--color-text);
+  background-color: var(--color-white);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+.container {
+  width: 1360px;
+  margin: 0 auto;
+}
+
+.container--wide {
+  width: 1364px;
+}
+
+/* Типографика */
+
+.title-xl {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.title-l {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.title-m {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.title-s {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.lead {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.label + :is(h1, h2) {
+  margin-top: 16px;
+}
+
+:is(h1, h2, .text, .lead, .project-meta) + p:is(.text, .lead) {
+  margin-top: 24px;
+}
+
+:is(h2, .text, .lead) + .button {
+  margin-top: 40px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Общие элементы */
+
+.logo {
+  font-size: 42px;
+  line-height: 51px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 210px;
+  padding: 16px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.button:disabled {
+  background-color: var(--color-primary-muted);
+  color: var(--color-gray);
+  cursor: not-allowed;
+}
+
+.button--full {
+  width: 100%;
+}
+
+.more-link {
+  display: inline-block;
+  margin-top: 24px;
+  font-weight: 700;
+}
+
+.header__inner,
+.header__right,
+.footer__inner,
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header */
+
+.header__inner {
+  height: 100px;
+}
+
+.header__right {
+  width: 785px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 36px;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Footer */
+
+.footer {
+  padding: 25px 0;
+}
+
+.footer__list {
+  display: flex;
+  gap: 40px;
+}
+
+/* Секции */
+
+.section {
+  padding: 40px 0;
+}
+
+.section--last {
+  padding-bottom: 80px;
+}
+
+.section-head {
+  margin-bottom: 24px;
+}
+
+.section-title {
+  margin-bottom: 40px;
+}
+
+.hero {
+  height: 900px;
+  padding-top: 528px;
+  background: url("images/hero.png") center / cover no-repeat;
+  color: var(--color-white);
+}
+
+.hero__title {
+  text-transform: uppercase;
+}
+
+.contact {
+  padding: 60px 0;
+  background:
+    linear-gradient(var(--color-overlay), var(--color-overlay)),
+    url("images/contact-bg.png") center / cover no-repeat;
+  color: var(--color-white);
+}
+
+/* Раскладки */
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.split {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.split--top {
+  align-items: flex-start;
+}
+
+.split__content {
+  width: 555px;
+}
+
+.split__content--half {
+  width: 670px;
+}
+
+.split__image {
+  width: 785px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.split__image--short {
+  height: 320px;
+  object-position: center 20%;
+}
+
+.split__image--half {
+  width: 670px;
+  height: 440px;
+  object-position: center 20%;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 440px);
+  gap: 20px;
+  align-items: center;
+}
+
+/* Карточки */
+
+.card__image {
+  width: 100%;
+  height: 295px;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+
+.card__image--tall {
+  height: 680px;
+}
+
+.card__title,
+.feature__title,
+.step__title {
+  margin-bottom: 8px;
+}
+
+.card__meta {
+  color: var(--color-gray);
+}
+
+.project-meta {
+  margin-top: 12px;
+}
+
+.service__image {
+  width: 670px;
+  height: 280px;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Нумерованные пункты */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.feature {
+  display: flex;
+  gap: 20px;
+}
+
+.feature__number {
+  flex-shrink: 0;
+  width: 95px;
+}
+
+.steps {
+  position: relative;
+}
+
+.steps__list {
+  display: grid;
+  grid-template-columns: repeat(6, 210px);
+  gap: 20px;
+}
+
+.steps__line {
+  position: absolute;
+  top: 30px;
+  left: 59px;
+}
+
+.step {
+  position: relative;
+}
+
+.step__number,
+.step__title {
+  font-weight: 700;
+}
+
+.step__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
+  background-color: var(--color-white);
+}
+
+/* Контакты */
+
+.contacts-layout {
+  display: grid;
+  grid-template-columns: 670px 670px;
+  gap: 20px;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.contacts-list__row,
+.contacts-list__value {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contacts-list__label {
+  width: 210px;
+}
+
+/* Форма */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field__input {
+  height: 50px;
+  padding: 12px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background-color: var(--color-white);
+  color: var(--color-text);
+}
+
+.field--error .field__input {
+  border-color: var(--color-error);
+}
+
+.field__error {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-error);
+}
+
+.field__input::placeholder,
+.field__input--select:invalid {
+  color: var(--color-border);
+}
+
+.field__input--select {
+  appearance: none;
+  background: var(--color-white) url("images/icon-expand.svg") right 16px center no-repeat;
+}
+
+.field__input--textarea {
+  height: 120px;
+  padding: 13px 16px;
+  resize: vertical;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox input {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  accent-color: var(--color-primary);
+}
+
+/* Попап */
+
+.popup {
+  width: 560px;
+  padding: 32px 32px 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.18);
+}
+
+.popup::backdrop {
+  background-color: var(--color-overlay);
+}
+
+.popup__head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.popup__title {
+  flex-grow: 1;
+}
+
+.popup__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
