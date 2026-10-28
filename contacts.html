@@ -24,7 +24,7 @@
             <li><a class="nav__link" href="contacts.html" aria-current="page">Контакты</a></li>
           </ul>
         </nav>
-        <a class="button" href="contacts.html">Обсудить проект <span>→</span></a>
+        <button class="button" type="button" data-open-form>Обсудить проект <span>→</span></button>
       </div>
     </div>
   </header>
@@ -75,52 +75,6 @@
             <h2 class="title-l">Отправить заявку</h2>
             <p class="lead">Поля со звездочкой обязательны для заполнения</p>
           </div>
-          <div class="form__row">
-            <label class="field">
-              Имя*
-              <input class="field__input" type="text" name="name" placeholder="Ваше имя" required>
-            </label>
-            <label class="field">
-              Email*
-              <input class="field__input" type="email" name="email" placeholder="your@email.com" required>
-            </label>
-          </div>
-          <div class="form__row">
-            <label class="field">
-              Телефон*
-              <input class="field__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
-            </label>
-            <label class="field">
-              Тип проекта*
-              <select class="field__input field__input--select" name="type" required>
-                <option value="" selected disabled>Выберите тип съемки</option>
-                <option>Коммерческая съемка</option>
-                <option>Портретная съемка</option>
-                <option>Предметная съемка</option>
-                <option>Fashion и редакционная съемка</option>
-                <option>Продакшн</option>
-              </select>
-            </label>
-          </div>
-          <label class="field">
-            Бюджет*
-            <select class="field__input field__input--select" name="budget" required>
-              <option value="" selected disabled>Выберите диапазон</option>
-              <option>До 50 000 ₽</option>
-              <option>50 000 – 150 000 ₽</option>
-              <option>150 000 – 300 000 ₽</option>
-              <option>Более 300 000 ₽</option>
-            </select>
-          </label>
-          <label class="field">
-            Описание проекта*
-            <textarea class="field__input field__input--textarea" name="message" placeholder="Расскажите о задаче, сроках и референсах" required></textarea>
-          </label>
-          <label class="checkbox">
-            <input type="checkbox" name="agree" required>
-            <span>Я согласен на <a class="underline" href="#">обработку персональных данных</a>*</span>
-          </label>
-          <button class="button button--full" type="submit" disabled>Отправить <span>→</span></button>
         </form>
       </div>
     </section>
@@ -158,7 +112,7 @@
       <div class="container">
         <p class="label">Давайте работать вместе</p>
         <h2 class="title-l">Есть проект?<br>Давайте обсудим.</h2>
-        <a class="button" href="contacts.html">Начать проект <span>→</span></a>
+        <button class="button" type="button" data-open-form>Начать проект <span>→</span></button>
       </div>
     </section>
   </main>
@@ -177,16 +131,6 @@
       </ul>
     </div>
   </footer>
-
-  <dialog class="popup" aria-labelledby="popup-title">
-    <div class="popup__head">
-      <h2 class="popup__title title-s" id="popup-title">Заявка отправлена</h2>
-      <button class="popup__close" type="button" aria-label="Закрыть">
-        <img src="images/icon-close.svg" width="24" height="24" alt="">
-      </button>
-    </div>
-    <p>Спасибо за обращение. Мы свяжемся с вами, чтобы обсудить детали съемки.</p>
-  </dialog>
 
   <script src="script.js"></script>
 </body>

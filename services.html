@@ -7,13 +7,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="header">
-    <div class="container container--wide header__inner">
+    <div class="container-xxl header__inner">
       <a class="logo" href="index.html">ЛЮМА</a>
       <div class="header__right">
         <nav class="nav">
@@ -24,120 +24,164 @@
             <li><a class="nav__link" href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
-        <a class="button" href="contacts.html">Обсудить проект <span>→</span></a>
+        <button class="button" type="button" data-open-form>Обсудить проект <span>→</span></button>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="section">
-      <div class="container split split--top">
-        <div class="split__content">
-          <p class="label">Наши направления</p>
-          <h1 class="title-xl">Услуги</h1>
-          <p class="lead">Организуем фотосъемку от идеи<br>до готовых кадров. Помогаем брендам,<br>людям и творческим командам<br>рассказать свою историю.</p>
-        </div>
-        <img class="split__image split__image--short" src="images/studio.png" alt="Съемка в студии ЛЮМА">
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container stack">
-        <article class="split">
-          <div class="split__content split__content--half">
-            <h2 class="title-m">Коммерческая съемка</h2>
-            <p class="text">Фотографии для рекламных кампаний,<br>сайтов, соцсетей и печатных материалов.<br>Создаем визуальный образ вашего бренда.</p>
-            <a class="more-link" href="#">Подробнее →</a>
+    <section class="py-4 py-lg-5">
+      <div class="container-xxl">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <p class="small fw-semibold text-uppercase mb-3">Наши направления</p>
+            <h1 class="display-4 fw-normal mb-4">Услуги</h1>
+            <p class="fs-5 mb-0">Организуем фотосъемку от идеи<br>до готовых кадров. Помогаем брендам,<br>людям и творческим командам<br>рассказать свою историю.</p>
           </div>
-          <img class="split__image service__image" src="images/service-commercial.png" alt="Коммерческая съемка">
-        </article>
-        <article class="split">
-          <div class="split__content split__content--half">
-            <h2 class="title-m">Портретная съемка</h2>
-            <p class="text">Индивидуальные и корпоративные портреты,<br>съемки для личного бренда, портфолио и команд.<br>Помогаем раскрыть характер человека.</p>
-            <a class="more-link" href="#">Подробнее →</a>
+          <div class="col-lg-7">
+            <div class="ratio ratio-21x9">
+              <img class="w-100 h-100 object-fit-cover rounded-1" src="images/studio.png" alt="Съемка в студии ЛЮМА">
+            </div>
           </div>
-          <img class="split__image service__image" src="images/project-noir.png" alt="Портретная съемка">
-        </article>
-        <article class="split">
-          <div class="split__content split__content--half">
-            <h2 class="title-m">Предметная съемка</h2>
-            <p class="text">Снимаем товары для каталогов, интернет-магазинов<br>и маркетплейсов. Показываем форму, фактуру<br>и детали, которые важны покупателю.</p>
-            <a class="more-link" href="#">Подробнее →</a>
-          </div>
-          <img class="split__image service__image" src="images/project-forma.png" alt="Предметная съемка">
-        </article>
-        <article class="split">
-          <div class="split__content split__content--half">
-            <h2 class="title-m">Fashion и редакционная<br>съемка</h2>
-            <p class="text">Съемки коллекций, лукбуков и творческих историй.<br>Продумываем образ вместе со стилистами,<br>моделями и вашей командой.</p>
-            <a class="more-link" href="#">Подробнее →</a>
-          </div>
-          <img class="split__image service__image" src="images/hero.png" alt="Fashion и редакционная съемка">
-        </article>
-        <article class="split">
-          <div class="split__content split__content--half">
-            <h2 class="title-m">Продакшн</h2>
-            <p class="text">Берем на себя концепцию, команду и локацию,<br>подготовку и проведение съемки, постобработку.<br>Вы получаете готовый материал для своей задачи.</p>
-            <a class="more-link" href="#">Подробнее →</a>
-          </div>
-          <img class="split__image service__image" src="images/service-production.png" alt="Продакшн">
-        </article>
-      </div>
-    </section>
-
-    <section class="section section--last">
-      <div class="container">
-        <h2 class="title-l section-title">Этапы сотрудничества</h2>
-        <div class="steps">
-          <img class="steps__line" src="images/steps-line.svg" width="1091" height="1" alt="">
-          <ol class="steps__list">
-            <li class="step">
-              <p class="step__number lead">01</p>
-              <h3 class="step__title lead">Заявка</h3>
-              <p>Вы описываете<br>задачу и оставляете<br>контакты</p>
-            </li>
-            <li class="step">
-              <p class="step__number lead">02</p>
-              <h3 class="step__title lead">Обсуждение</h3>
-              <p>Уточняем формат,<br>сроки и бюджет</p>
-            </li>
-            <li class="step">
-              <p class="step__number lead">03</p>
-              <h3 class="step__title lead">Концепция</h3>
-              <p>Предлагаем идею,<br>референсы<br>и команду</p>
-            </li>
-            <li class="step">
-              <p class="step__number lead">04</p>
-              <h3 class="step__title lead">Подготовка</h3>
-              <p>Организуем локацию,<br>стилизацию и реквизит</p>
-            </li>
-            <li class="step">
-              <p class="step__number lead">05</p>
-              <h3 class="step__title lead">Съемка</h3>
-              <p>Снимаем по<br>утвержденной<br>концепции</p>
-            </li>
-            <li class="step">
-              <p class="step__number lead">06</p>
-              <h3 class="step__title lead">Результат</h3>
-              <p>Обрабатываем кадры<br>и передаем готовые<br>файлы</p>
-            </li>
-          </ol>
         </div>
       </div>
     </section>
 
-    <section class="contact">
-      <div class="container">
-        <p class="label">Давайте работать вместе</p>
-        <h2 class="title-l">Есть проект?<br>Давайте обсудим.</h2>
-        <a class="button" href="contacts.html">Начать проект <span>→</span></a>
+    <section class="py-4 py-lg-5">
+      <div class="container-xxl">
+        <div class="vstack gap-5">
+          <article class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <h2 class="fs-2 fw-normal mb-4">Коммерческая съемка</h2>
+              <p class="fs-5 mb-4">Фотографии для рекламных кампаний,<br>сайтов, соцсетей и печатных материалов.<br>Создаем визуальный образ вашего бренда.</p>
+              <a class="link-dark fw-bold text-decoration-none" href="#">Подробнее →</a>
+            </div>
+            <div class="col-lg-6">
+              <div class="ratio ratio-21x9">
+                <img class="w-100 h-100 object-fit-cover rounded-1" src="images/service-commercial.png" alt="Коммерческая съемка">
+              </div>
+            </div>
+          </article>
+          <article class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <h2 class="fs-2 fw-normal mb-4">Портретная съемка</h2>
+              <p class="fs-5 mb-4">Индивидуальные и корпоративные портреты,<br>съемки для личного бренда, портфолио и команд.<br>Помогаем раскрыть характер человека.</p>
+              <a class="link-dark fw-bold text-decoration-none" href="#">Подробнее →</a>
+            </div>
+            <div class="col-lg-6">
+              <div class="ratio ratio-21x9">
+                <img class="w-100 h-100 object-fit-cover rounded-1" src="images/project-noir.png" alt="Портретная съемка">
+              </div>
+            </div>
+          </article>
+          <article class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <h2 class="fs-2 fw-normal mb-4">Предметная съемка</h2>
+              <p class="fs-5 mb-4">Снимаем товары для каталогов, интернет-магазинов<br>и маркетплейсов. Показываем форму, фактуру<br>и детали, которые важны покупателю.</p>
+              <a class="link-dark fw-bold text-decoration-none" href="#">Подробнее →</a>
+            </div>
+            <div class="col-lg-6">
+              <div class="ratio ratio-21x9">
+                <img class="w-100 h-100 object-fit-cover rounded-1" src="images/project-forma.png" alt="Предметная съемка">
+              </div>
+            </div>
+          </article>
+          <article class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <h2 class="fs-2 fw-normal mb-4">Fashion и редакционная<br>съемка</h2>
+              <p class="fs-5 mb-4">Съемки коллекций, лукбуков и творческих историй.<br>Продумываем образ вместе со стилистами,<br>моделями и вашей командой.</p>
+              <a class="link-dark fw-bold text-decoration-none" href="#">Подробнее →</a>
+            </div>
+            <div class="col-lg-6">
+              <div class="ratio ratio-21x9">
+                <img class="w-100 h-100 object-fit-cover rounded-1" src="images/hero.png" alt="Fashion и редакционная съемка">
+              </div>
+            </div>
+          </article>
+          <article class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <h2 class="fs-2 fw-normal mb-4">Продакшн</h2>
+              <p class="fs-5 mb-4">Берем на себя концепцию, команду и локацию,<br>подготовку и проведение съемки, постобработку.<br>Вы получаете готовый материал для своей задачи.</p>
+              <a class="link-dark fw-bold text-decoration-none" href="#">Подробнее →</a>
+            </div>
+            <div class="col-lg-6">
+              <div class="ratio ratio-21x9">
+                <img class="w-100 h-100 object-fit-cover rounded-1" src="images/service-production.png" alt="Продакшн">
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-4 pb-5 py-lg-5">
+      <div class="container-xxl">
+        <h2 class="display-5 fw-normal mb-5">Этапы сотрудничества</h2>
+        <ol class="row row-cols-2 row-cols-md-3 row-cols-lg-6 gx-0 gy-4 list-unstyled mb-0">
+            <li class="col">
+              <div class="position-relative mb-3">
+                <hr class="position-absolute top-50 start-0 w-100 m-0 border-dark opacity-100 d-none d-lg-block">
+                <span class="position-relative d-inline-flex align-items-center justify-content-center p-3 border border-dark rounded-circle bg-white fs-5 fw-bold lh-1">01</span>
+              </div>
+              <h3 class="fs-5 fw-bold mb-2 pe-3">Заявка</h3>
+              <p class="mb-0 pe-3">Вы описываете<br>задачу и оставляете<br>контакты</p>
+            </li>
+            <li class="col">
+              <div class="position-relative mb-3">
+                <hr class="position-absolute top-50 start-0 w-100 m-0 border-dark opacity-100 d-none d-lg-block">
+                <span class="position-relative d-inline-flex align-items-center justify-content-center p-3 border border-dark rounded-circle bg-white fs-5 fw-bold lh-1">02</span>
+              </div>
+              <h3 class="fs-5 fw-bold mb-2 pe-3">Обсуждение</h3>
+              <p class="mb-0 pe-3">Уточняем формат,<br>сроки и бюджет</p>
+            </li>
+            <li class="col">
+              <div class="position-relative mb-3">
+                <hr class="position-absolute top-50 start-0 w-100 m-0 border-dark opacity-100 d-none d-lg-block">
+                <span class="position-relative d-inline-flex align-items-center justify-content-center p-3 border border-dark rounded-circle bg-white fs-5 fw-bold lh-1">03</span>
+              </div>
+              <h3 class="fs-5 fw-bold mb-2 pe-3">Концепция</h3>
+              <p class="mb-0 pe-3">Предлагаем идею,<br>референсы<br>и команду</p>
+            </li>
+            <li class="col">
+              <div class="position-relative mb-3">
+                <hr class="position-absolute top-50 start-0 w-100 m-0 border-dark opacity-100 d-none d-lg-block">
+                <span class="position-relative d-inline-flex align-items-center justify-content-center p-3 border border-dark rounded-circle bg-white fs-5 fw-bold lh-1">04</span>
+              </div>
+              <h3 class="fs-5 fw-bold mb-2 pe-3">Подготовка</h3>
+              <p class="mb-0 pe-3">Организуем локацию,<br>стилизацию и реквизит</p>
+            </li>
+            <li class="col">
+              <div class="position-relative mb-3">
+                <hr class="position-absolute top-50 start-0 w-100 m-0 border-dark opacity-100 d-none d-lg-block">
+                <span class="position-relative d-inline-flex align-items-center justify-content-center p-3 border border-dark rounded-circle bg-white fs-5 fw-bold lh-1">05</span>
+              </div>
+              <h3 class="fs-5 fw-bold mb-2 pe-3">Съемка</h3>
+              <p class="mb-0 pe-3">Снимаем по<br>утвержденной<br>концепции</p>
+            </li>
+            <li class="col">
+              <div class="position-relative mb-3">
+                <span class="position-relative d-inline-flex align-items-center justify-content-center p-3 border border-dark rounded-circle bg-white fs-5 fw-bold lh-1">06</span>
+              </div>
+              <h3 class="fs-5 fw-bold mb-2 pe-3">Результат</h3>
+              <p class="mb-0 pe-3">Обрабатываем кадры<br>и передаем готовые<br>файлы</p>
+            </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="position-relative overflow-hidden py-5 text-white">
+      <img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover rounded-0" src="images/contact-bg.png" alt="">
+      <div class="position-absolute top-0 start-0 w-100 h-100 bg-black bg-opacity-25"></div>
+      <div class="container-xxl position-relative py-lg-3">
+        <p class="small fw-semibold text-uppercase mb-3">Давайте работать вместе</p>
+        <h2 class="display-5 fw-normal mb-4">Есть проект?<br>Давайте обсудим.</h2>
+        <button class="btn btn-brand btn-lg rounded-1 px-5 py-3" type="button" data-open-form>Начать проект →</button>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container container--wide footer__inner">
+    <div class="container-xxl footer__inner">
       <a class="logo" href="index.html">ЛЮМА</a>
       <ul class="footer__list">
         <li><a href="#">Behance</a></li>
@@ -150,5 +194,7 @@
       </ul>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
